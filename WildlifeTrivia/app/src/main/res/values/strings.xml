@@ -3,6 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome">Welcome!</string>
+    <string name="intro">Ready yourself for some exciting wildlife questions and riddles to test your knowledge of our African heritage.</string>
     <string name="play_game">Play</string>
     <string name="player_name">Player Name</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="categories1">ANIMALS</string>
+    <string name="categories2">PLANTS</string>
+    <string name="categories3">BOTH/MIX</string>
 </resources>

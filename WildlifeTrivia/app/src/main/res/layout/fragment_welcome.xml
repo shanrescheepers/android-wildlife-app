@@ -8,26 +8,61 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/primary">
 
-        <TextView
-            android:id="@+id/welcomeText"
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/welcome"
-            android:textSize="48sp"
-            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toTopOf="@+id/welcomeText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="164dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="156dp"
+            android:fontFamily="@font/caveat"
+            android:text="@string/welcome"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/green"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/intro"
+            android:textAlignment="center"
+            android:textColor="@color/beige"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/playerName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
 
         <Button
             android:id="@+id/playButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:backgroundTint="@color/orange"
+            android:backgroundTintMode="src_in"
             android:text="@string/play_game"
+            android:textColor="@color/beige"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/playerName" />
@@ -42,12 +77,15 @@
             android:ems="10"
             android:hint="@string/player_name"
             android:inputType="textPersonName"
+            app:hintTextAppearance="@color/greygreen"
             android:textColorHint="#757575"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

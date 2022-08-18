@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<!--    My Coloros-->
+    <color name="orange">#BF843C</color>
+    <color name="primary">#262524</color>
+    <color name="secondary">#303030</color>
+    <color name="brown">#A57D66</color>
+    <color name="green">#8D8561</color>
+    <color name="lightolive">#B6AF93</color>
+    <color name="lightsand">#B6AF93</color>
+    <color name="lightsky">#CDDFEC</color>
+    <color name="beige">#f8e7cf</color>
+    <color name="dungbrown">#71644a</color>
+    <color name="greygreen">#aeb5a2</color>
+    <color name="grey">#7e8e8e</color>
+    <color name="sandbrown">#9c8059</color>
+    <color name="orangebeige">#d7b481</color>
 </resources>

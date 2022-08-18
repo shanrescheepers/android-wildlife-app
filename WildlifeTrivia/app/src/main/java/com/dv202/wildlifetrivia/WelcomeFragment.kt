@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -20,6 +21,7 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
 
         playButton = binding.playButton
@@ -30,7 +32,10 @@ class WelcomeFragment : Fragment() {
         }
 
         return binding.root
+
     }
+
+
 
     //TODO
     // create categroies ui
