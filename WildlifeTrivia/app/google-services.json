@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159163621048",
+    "project_id": "wildlife-trivia-6fd5b",
+    "storage_bucket": "wildlife-trivia-6fd5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159163621048:android:f12801d0f43cea2a5c9e4d",
+        "android_client_info": {
+          "package_name": "com.dv202.wildlifetrivia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159163621048-lm5kqinb5s4fhb23tthbm002tvjvu0ke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvoVRkaOYdgnuxlSu7dEXWY4IF1FZAUQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159163621048-lm5kqinb5s4fhb23tthbm002tvjvu0ke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
