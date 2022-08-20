@@ -10,4 +10,5 @@
     <string name="categories1">ANIMALS</string>
     <string name="categories2">PLANTS</string>
     <string name="categories3">BOTH/MIX</string>
+    <string name="wildlife_icon">Wildlife Icon</string>
 </resources>

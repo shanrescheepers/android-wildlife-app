@@ -5,21 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoriesFragment"
-    android:background="@color/primary">>
-
-    <!-- TODO: Update blank fragment layout -->
+    android:background="@color/primary">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_gravity="top"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/app_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeName"
+        android:contentDescription="@string/wildlife_icon" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,7 +28,7 @@
         android:text="@string/categories"
         android:textAlignment="center"
         android:textColor="@color/sandbrown"
-        android:textSize="23dp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,48 +93,14 @@
         app:layout_constraintTop_toBottomOf="@+id/category2"
         app:layout_constraintVertical_bias="0.100000024" />
 
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="70dp"
+    <TextView
+        android:id="@+id/welcomeName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/lightsand"
-        android:text="Play Audio"
-        android:textColor="@color/primary"
-        android:textSize="10dp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <Button
-        android:id="@+id/btnPause"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/orange"
-        android:text="Pause Audio"
-        android:textColor="@color/primary"
-        android:textSize="10dp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="@color/orangebeige"
-        android:src="@android:drawable/ic_menu_preferences"
-        android:tint="@color/grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -19,7 +19,8 @@
             app:layout_constraintBottom_toTopOf="@+id/welcomeText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/wildlife_icon" />
 
         <TextView
             android:id="@+id/welcomeText"
@@ -62,7 +63,7 @@
             android:backgroundTint="@color/orange"
             android:backgroundTintMode="src_in"
             android:text="@string/play_game"
-            android:textColor="@color/beige"
+            android:textColor="#212121"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/playerName" />
@@ -77,8 +78,8 @@
             android:ems="10"
             android:hint="@string/player_name"
             android:inputType="textPersonName"
+            android:textColorHint="#78909C"
             app:hintTextAppearance="@color/greygreen"
-            android:textColorHint="#757575"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"

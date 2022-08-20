@@ -1,5 +1,7 @@
 package com.dv202.wildlifetrivia
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,14 +23,21 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
 
         playButton = binding.playButton
 
         playButton.setOnClickListener {
-            Toast.makeText(activity, "Hello ${binding.playerName.text}", Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.categoriesFragment)
+            val sharedPreferences: SharedPreferences? = activity?.getSharedPreferences("playerData",
+                Context.MODE_PRIVATE)
+            val editor: SharedPreferences.Editor =  sharedPreferences!!.edit()
+
+            val name = binding.playerName.text
+
+            editor.putString("name", name.toString())
+            editor.apply()
+            editor.commit()
         }
 
         return binding.root
