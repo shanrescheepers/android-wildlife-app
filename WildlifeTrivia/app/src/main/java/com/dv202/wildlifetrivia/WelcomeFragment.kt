@@ -11,6 +11,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.dv202.wildlifetrivia.databinding.FragmentWelcomeBinding
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.wajahatkarim3.easyvalidation.core.view_ktx.nonEmpty
 
 
