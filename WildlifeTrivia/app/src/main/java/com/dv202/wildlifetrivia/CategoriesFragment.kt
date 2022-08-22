@@ -5,7 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.replace
+import androidx.navigation.fragment.findNavController
+import com.dv202.wildlifetrivia.R.id.action_categoriesFragment_to_multiFragment
 import com.dv202.wildlifetrivia.databinding.FragmentCategoriesBinding
 import com.dv202.wildlifetrivia.models.QuestionDto
 import com.dv202.wildlifetrivia.services.QuestionsService
@@ -27,17 +28,17 @@ class CategoriesFragment : Fragment() {
         savedInstanceState: Bundle?
 
     ): View? {
-
         binding = FragmentCategoriesBinding.inflate(inflater, container, false)
         binding.welcomeName.text = "Welcome, $playerName"
-
+//Category 1 is FAUNA BTN
         binding.category1.setOnClickListener() {
-
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.categoriesFragment, CategoriesFragment())
-                .commit();
+//            val newFragment: Fragment = ExampleFragment()
+            findNavController().navigate(action_categoriesFragment_to_multiFragment)
+//            findNavController().navigate(R.id.categoriesFragment)
+//            requireActivity().supportFragmentManager.beginTransaction()
+//                .replace(R.id.categoriesFragment, CategoriesFragment())
+//                .commit();
         }
-
         return binding.root
     }
 }
