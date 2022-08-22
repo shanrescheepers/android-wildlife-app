@@ -18,7 +18,14 @@
         android:id="@+id/categoriesFragment"
         android:name="com.dv202.wildlifetrivia.CategoriesFragment"
         android:label="fragment_categories"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_multiFragment"
+            app:destination="@id/multiFragment" />
+    </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.dv202.wildlifetrivia.SplashFragment"
@@ -27,5 +34,23 @@
         <action
             android:id="@+id/action_splashFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.dv202.wildlifetrivia.InputFragment"
+        android:label="fragment_input"
+        tools:layout="@layout/fragment_input" >
+        <action
+            android:id="@+id/action_inputFragment_to_multiFragment"
+            app:destination="@id/multiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiFragment"
+        android:name="com.dv202.wildlifetrivia.MultiFragment"
+        android:label="fragment_multi"
+        tools:layout="@layout/fragment_multi" >
+        <action
+            android:id="@+id/action_multiFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
     </fragment>
 </navigation>

@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.dv202.wildlifetrivia.databinding.FragmentWelcomeBinding
 import com.dv202.wildlifetrivia.models.QuestionDto
+import com.dv202.wildlifetrivia.services.QuestionsService
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
@@ -39,29 +40,11 @@ class WelcomeFragment : Fragment() {
             val name = binding.playerName.text.toString()
             val nameIsValid = name.nonEmpty()
 
-            val db = Firebase.firestore
-
-            db.collection("questions").get().addOnSuccessListener { questions ->
-                for (question in questions) {
-                    val question = question.toObject<QuestionDto>()
-
-                    Toast.makeText(activity, question.toString(), Toast.LENGTH_LONG).show()
-                }
-            }
-
             if (nameIsValid) {
                 findNavController().navigate(R.id.categoriesFragment)
-
-                val sharedPreferences: SharedPreferences? = activity?.getSharedPreferences("playerData",
-                    Context.MODE_PRIVATE)
-                val editor: SharedPreferences.Editor =  sharedPreferences!!.edit()
-
-
-                editor.putString("name", name)
-                editor.apply()
-                editor.commit()
+                QuestionsService.setPlayerName(name)
             } else {
-                //Toast.makeText(activity, "Player name is required", Toast.LENGTH_LONG).show()
+                Toast.makeText(activity, "Player name is required", Toast.LENGTH_LONG).show()
             }
         }
 
