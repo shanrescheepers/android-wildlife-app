@@ -7,8 +7,8 @@
     <string name="play_game">Play</string>
     <string name="player_name">Player Name</string>
     <string name="categories">CATEGORIES</string>
-    <string name="categories1">ANIMALS</string>
-    <string name="categories2">PLANTS</string>
-    <string name="categories3">BOTH/MIX</string>
+    <string name="categories1">FAUNA</string>
+    <string name="categories2">FLORA</string>
+    <string name="categories3">FAUNA/FLORA</string>
     <string name="wildlife_icon">Wildlife Icon</string>
 </resources>
