@@ -3,5 +3,9 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/abel</item>
         <item>@font/allan</item>
+        <item>@font/amiko</item>
+        <item>@font/amiko_bold</item>
+        <item>@font/baloo_bhaina</item>
+        <item>@font/doppio_one</item>
     </array>
 </resources>

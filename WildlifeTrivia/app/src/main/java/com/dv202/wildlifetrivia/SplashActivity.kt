@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
+import com.dv202.wildlifetrivia.R.layout.activity_splash
 import com.dv202.wildlifetrivia.services.DataService
 
 @Suppress("DEPRECATION")
@@ -14,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(activity_splash)
         DataService.getDataFromServer()
 
         window.setFlags(

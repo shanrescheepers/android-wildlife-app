@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/primary">
 
     <TextView
         android:id="@+id/questionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
+        android:fontFamily="@font/caveat"
         android:text="@string/question_text"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textColor="@color/lightolive"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,7 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:fontFamily="@font/amiko"
         android:text="@string/correct"
+        android:textColor="@color/grey"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/amiko"
         android:text="@string/correct"
+        android:textColor="@color/orangebeige"
         app:layout_constraintEnd_toStartOf="@+id/correctIncorrect"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/correctIncorrect" />
@@ -45,8 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/amiko"
         android:text="@string/user"
+        android:textColor="@color/greygreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/correctIncorrect"
         app:layout_constraintTop_toBottomOf="@+id/correctIncorrect" />

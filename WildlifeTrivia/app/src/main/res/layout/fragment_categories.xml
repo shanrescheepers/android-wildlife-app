@@ -8,57 +8,85 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/primary">
 
         <TextView
             android:id="@+id/welcomePlayerTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="286dp"
+            android:layout_height="43dp"
             android:layout_marginTop="32dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/caveat"
             android:text="@string/welcome_text"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="42sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/animalCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/animals"
+            android:id="@+id/bothCategory"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/dungbrown"
+            android:fontFamily="@font/caveat"
+            android:text="@string/both"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plantsCategory" />
+
+        <Button
+            android:id="@+id/animalCategory"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="160dp"
+            android:backgroundTint="@color/lightsand"
+            android:fontFamily="@font/caveat"
+            android:text="@string/animals"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:iconPadding="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/welcomePlayerTitle" />
 
         <Button
             android:id="@+id/plantsCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@color/greygreen"
+            android:fontFamily="@font/caveat"
             android:text="@string/plants"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/animalCategory" />
-
-        <Button
-            android:id="@+id/bothCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/both"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/plantsCategory" />
 
         <TextView
             android:id="@+id/animalHS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="12dp"
             android:text="@string/textview"
+            android:textColor="@color/orange"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/animalCategory" />
 
@@ -66,8 +94,11 @@
             android:id="@+id/plantHS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="@string/textview"
+            android:textColor="@color/orange"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/plantsCategory" />
 
@@ -75,10 +106,30 @@
             android:id="@+id/bothHS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="@string/textview"
+            android:textColor="@color/orange"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bothCategory" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiko"
+            android:text="@string/sub"
+            android:textAlignment="center"
+            android:textColor="@color/greygreen"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/animalCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomePlayerTitle"
+            app:layout_constraintVertical_bias="0.209" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
 

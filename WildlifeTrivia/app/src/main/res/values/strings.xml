@@ -3,6 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank  input fragment</string>
     <string name="welcome">Welcome!</string>
+    <string name="sub">Ready yourself for some exciting wildlife questions to test your knowledge of our African heritage!</string>
     <string name="intro">Ready yourself for some exciting wildlife questions and riddles to test your knowledge of our African heritage.</string>
     <string name="play_game">Play</string>
     <string name="player_name">Player Name</string>
@@ -11,7 +12,7 @@
     <string name="categories2">FLORA</string>
     <string name="categories3">FAUNA/FLORA</string>
     <string name="wildlife_icon">Wildlife Icon</string>
-    <string name="enter_player_name">Enter Player Name:</string>
+    <string name="enter_player_name">Enter Player Name Below</string>
     <string name="play_button_text">Play</string>
     <string name="name_hint">Name</string>
     <string name="animals">Animals</string>

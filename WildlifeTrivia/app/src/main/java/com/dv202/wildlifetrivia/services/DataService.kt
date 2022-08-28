@@ -1,13 +1,14 @@
 package com.dv202.wildlifetrivia.services
 
+
+import android.util.Log
 import com.dv202.wildlifetrivia.models.QuestionDto
-import  android.util.Log
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
 
-
 object DataService {
+
     private var currentQuestion: QuestionDto? = null
     private var questionIndex: Int = 0
     private var totalQuestions: Int = 0
@@ -21,6 +22,7 @@ object DataService {
     fun setPlayerName(name: String) {
         playerName = name
     }
+
     fun getPlayerName(): String {
         return playerName
     }
@@ -37,6 +39,7 @@ object DataService {
         this.totalQuestions = this.questions!!.count()
         return this.questions
     }
+
     fun getFaunaQuestions(): List<QuestionDto>? {
         this.questions = questions?.filter { question -> question.category == "animals" }
         this.totalQuestions = this.questions!!.count()
@@ -46,10 +49,8 @@ object DataService {
 
     fun getFLoraQuestions(): List<QuestionDto>? {
         this.questions = questions?.filter { question -> question.category == "plants" }
-        println(this.questions)
         this.totalQuestions = this.questions!!.count()
         return this.questions
-
     }
 
     fun getNextQuestion(): QuestionDto? {
@@ -71,6 +72,8 @@ object DataService {
     fun setAnswer(input: String) {
         this.answers?.add(input)
     }
+
+
     fun checkNextQuestionType(): Boolean? {
         if (this.questionIndex < totalQuestions) {
             val nextQuestion = questions?.get(this.questionIndex)
@@ -79,6 +82,7 @@ object DataService {
             return null
         }
     }
+
     fun getTotalPoints(): Int {
         return this.totalPoints
     }
@@ -94,6 +98,7 @@ object DataService {
             this.setQuestions(documents.toObjects())
         }
     }
+
     fun reset() {
         this.currentQuestion = null
         this.questionIndex = 0

@@ -2,13 +2,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scoreIcon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.InputFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/primary">
 
         <TextView
             android:id="@+id/inputQuestionText"
@@ -17,10 +19,11 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="32dp"
             android:layout_marginRight="16dp"
+            android:fontFamily="@font/caveat"
             android:text="@string/question_text"
             android:textAlignment="center"
+            android:textColor="@color/lightolive"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,11 +33,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:backgroundTint="@color/lightolive"
             android:ems="10"
             android:hint="@string/answer_hint"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:textColor="@color/lightolive"
+            android:textColorHint="@color/lightolive"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputQuestionText"
@@ -45,21 +51,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/caveat"
             android:text="@string/submit_button_text"
+            android:textColorHint="@color/lightolive"
+            app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/answerInput" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="178dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/score"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/inputScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="48dp"
             android:text="@string/score"
+            android:textColor="@color/orangebeige"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
