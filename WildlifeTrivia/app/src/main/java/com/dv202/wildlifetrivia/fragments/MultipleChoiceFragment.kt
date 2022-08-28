@@ -7,11 +7,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.quiz.R
-import com.example.quiz.databinding.FragmentMultipleChoiceBinding
-import com.example.quiz.models.QuestionDto
-import com.example.quiz.services.DataService
-class MultipleChoiceFragment() : Fragment(), View.OnclickListerner{
+import com.dv202.wildlifetrivia.R
+import com.dv202.wildlifetrivia.databinding.FragmentMultipleChoiceBinding
+import com.dv202.wildlifetrivia.models.QuestionDto
+import com.dv202.wildlifetrivia.services.DataService
+
+class MultipleChoiceFragment() : Fragment(), View.OnclickListerner {
+
     private lateinit var _binding: FragmentMultipleChoiceBinding
     private var question: QuestionDto? = null
 

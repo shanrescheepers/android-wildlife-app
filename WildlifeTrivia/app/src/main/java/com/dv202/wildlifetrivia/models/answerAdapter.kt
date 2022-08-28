@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
-import com.example.quiz.R
+import com.dv202.wildlifetrivia.R
 
 internal class AnswerAdapter(private var questions: List<QuestionDto>, private var answers: List<String>): RecyclerView.Adapter<AnswerAdapter.AnswerViewHolder>() {
 

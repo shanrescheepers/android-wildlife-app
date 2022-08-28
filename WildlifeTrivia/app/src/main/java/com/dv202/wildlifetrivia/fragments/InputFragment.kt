@@ -4,9 +4,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.quiz.databinding.FragmentInputBinding
-import com.example.quiz.models.QuestionDto
-import com.example.quiz.services.DataService
+import com.dv202.wildlifetrivia.databinding.FragmentInputBinding
+import com.dv202.wildlifetrivia.models.QuestionDto
+import com.dv202.wildlifetrivia.services.DataService
 
 class InputFragment : Fragment() {
 

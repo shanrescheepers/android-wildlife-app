@@ -10,10 +10,10 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.quiz.R
-import com.example.quiz.databinding.FragmentCategoriesBinding
-import com.example.quiz.models.QuestionDto
-import com.example.quiz.services.DataService
+import com.dv202.wildlifetrivia.R
+import com.dv202.wildlifetrivia.databinding.FragmentCategoriesBinding
+import com.dv202.wildlifetrivia.models.QuestionDto
+import com.dv202.wildlifetrivia.services.DataService
 
 class CategoriesFragment : Fragment(), View.OnClickListener {
 
