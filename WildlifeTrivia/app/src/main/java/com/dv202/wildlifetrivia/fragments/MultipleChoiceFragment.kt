@@ -12,7 +12,7 @@ import com.dv202.wildlifetrivia.databinding.FragmentMultipleChoiceBinding
 import com.dv202.wildlifetrivia.models.QuestionDto
 import com.dv202.wildlifetrivia.services.DataService
 
-class MultipleChoiceFragment() : Fragment(), View.OnclickListerner {
+class MultipleChoiceFragment() : Fragment(), View.OnClickListener {
 
     private lateinit var _binding: FragmentMultipleChoiceBinding
     private var question: QuestionDto? = null

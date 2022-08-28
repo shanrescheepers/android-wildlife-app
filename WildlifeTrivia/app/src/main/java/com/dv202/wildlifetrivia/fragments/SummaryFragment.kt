@@ -60,8 +60,8 @@ class SummaryFragment : Fragment() {
     }
     //Move na die appbar ding toe
     // require activity -> this of context of Context
-    fun clearHighscores() {
-        val sharedPreference =  requireActivity().getSharedPreferences("Highscore", Context.MODE_PRIVATE)
-        sharedPreference.edit().clear().commit()
-    }
+//    fun clearHighscores() {
+//        val sharedPreference =  requireActivity().getSharedPreferences("Highscore", Context.MODE_PRIVATE)
+//        sharedPreference.edit().clear().commit()
+//    }
 }

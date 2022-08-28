@@ -1,7 +1,7 @@
 package com.dv202.wildlifetrivia.services
 
 import com.dv202.wildlifetrivia.models.QuestionDto
-import android.util.Log
+import  android.util.Log
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
@@ -41,12 +41,15 @@ object DataService {
         this.questions = questions?.filter { question -> question.category == "animals" }
         this.totalQuestions = this.questions!!.count()
         return this.questions
+
     }
 
     fun getFLoraQuestions(): List<QuestionDto>? {
         this.questions = questions?.filter { question -> question.category == "plants" }
+        println(this.questions)
         this.totalQuestions = this.questions!!.count()
         return this.questions
+
     }
 
     fun getNextQuestion(): QuestionDto? {

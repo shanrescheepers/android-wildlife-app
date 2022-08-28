@@ -28,13 +28,12 @@ class PlayerFragment : Fragment() {
         _binding.playButton.setOnClickListener {
             DataService.setPlayerName(_binding.playerNameInput.text.toString())
 
-            findNavController().navigate(R.id.categoriesFragment)
+            findNavController().navigate(R.id.categoriesFragment4)
         }
     }
 }
 
 
-import android.os.Bundle
 //import android.view.LayoutInflater
 //import android.view.View
 //import android.view.ViewGroup
