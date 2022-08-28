@@ -26,7 +26,7 @@
     <string name="answer_2">Answer 2</string>
     <string name="answer_3">Answer 3</string>
     <string name="answer_4">Answer 4</string>
-    <string name="score">score</string>
+    <string name="score">0</string>
     <string name="your_summary">Your Summary</string>
     <string name="correct">Correct</string>
     <string name="user">User</string>

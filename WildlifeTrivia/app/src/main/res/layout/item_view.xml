@@ -11,12 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/caveat"
         android:text="@string/question_text"
         android:textAlignment="center"
         android:textColor="@color/lightolive"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/amiko"
         android:text="@string/correct"
         android:textColor="@color/grey"
@@ -35,26 +38,29 @@
         app:layout_constraintTop_toBottomOf="@+id/questionText" />
 
     <TextView
-        android:id="@+id/correct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/amiko"
-        android:text="@string/correct"
-        android:textColor="@color/orangebeige"
-        app:layout_constraintEnd_toStartOf="@+id/correctIncorrect"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correctIncorrect" />
-
-    <TextView
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/amiko"
         android:text="@string/user"
         android:textColor="@color/greygreen"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toEndOf="@+id/correctIncorrect"
         app:layout_constraintTop_toBottomOf="@+id/correctIncorrect" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/correct"
+        android:textColor="@color/orangebeige"
+        app:layout_constraintEnd_toStartOf="@+id/correctIncorrect"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctIncorrect" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

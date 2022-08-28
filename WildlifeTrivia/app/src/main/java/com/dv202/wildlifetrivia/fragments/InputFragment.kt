@@ -26,7 +26,7 @@ class InputFragment : Fragment() {
     ): View? {
         _binding = FragmentInputBinding.inflate(inflater, container, false)
         _binding.inputQuestionText.text = this.question?.question
-        _binding.inputScore.text = "Score: ${DataService.getTotalPoints()}"
+        _binding.inputScore.text = "${DataService.getTotalPoints()}"
 
         _binding.inputSubmitButton.setOnClickListener {
             val input = _binding.answerInput.text.toString().lowercase()

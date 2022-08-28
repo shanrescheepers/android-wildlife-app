@@ -94,7 +94,7 @@ object DataService {
     fun getDataFromServer() {
         val db = Firebase.firestore
 
-        db.collection("trivia").get().addOnSuccessListener { documents ->
+        db.collection("questions").get().addOnSuccessListener { documents ->
             this.setQuestions(documents.toObjects())
         }
     }

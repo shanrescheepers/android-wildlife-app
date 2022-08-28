@@ -36,6 +36,16 @@ class CategoriesFragment : Fragment(), View.OnClickListener {
         _binding.plantHS.text = getPlantHighScore().toString()
         _binding.bothHS.text = getBothHighScore().toString()
 
+        _binding.reset.setOnClickListener {
+            val sharedPreference =  requireActivity().getSharedPreferences("Highscore", Context.MODE_PRIVATE)
+            sharedPreference.edit().clear().commit()
+            _binding.animalHS.text = getAnimalHighScore().toString()
+            _binding.plantHS.text = getPlantHighScore().toString()
+            _binding.bothHS.text = getBothHighScore().toString()
+        }
+
+
+
         return _binding.root
     }
 
@@ -73,7 +83,9 @@ class CategoriesFragment : Fragment(), View.OnClickListener {
                     findNavController().navigate(R.id.multipleChoiceFragment)
                 }
             }
+
         }
+
     }
 
     private fun getBothHighScore(): Int {

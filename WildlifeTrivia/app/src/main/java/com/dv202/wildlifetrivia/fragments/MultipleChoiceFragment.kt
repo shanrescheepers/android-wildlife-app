@@ -42,7 +42,7 @@ class MultipleChoiceFragment() : Fragment(), View.OnClickListener {
         _binding.answer3.text = question?.options!![2]
         _binding.answer4.text = question?.options!![3]
 
-        _binding.multiScore.text = "Score: ${DataService.getTotalPoints()}"
+        _binding.multiScore.text = "${DataService.getTotalPoints()}"
     }
     override fun onClick(view: View?) {
         val buttonClicked = view as Button
